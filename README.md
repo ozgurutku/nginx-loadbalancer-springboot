@@ -9,7 +9,7 @@ https://blog.devgenius.io/load-balancing-a-spring-boot-application-with-nginx-an
 With this command, everything necessary will be installed and the program will be run.
 
 # Usage
-In our application we have a get endpoint that returns the number and a post endpoint that updates the number. The default value of the number is 7. We created two of our application, we can access one via localhost:8088 and the other via localhost:8089. Nginx is running on localhost:9090. Nginx will balance incoming requests.
+In our application we have a get endpoint that returns the number and a post endpoint that updates the number. The default value of the number is 7. We created two of our application, we can access one via localhost:8088 and the other via localhost:8089. Nginx is running on localhost:9090. Nginx balances incoming requests by distributing them across our two applications.
 <br>
 <br>
 We send a post request to localhost:8088 and update the value of our number to 5. (You can also choose localhost:8089).
